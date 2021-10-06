@@ -1,0 +1,22 @@
+In this note, details and functions of the code will be introduced:
+
+The whole function of this code is to find the corresponding heading angle and pitch angle between the two given coordinate points.
+
+This code is divided into three parts:
+First one is to build a mathematical model of the earth, and convert the longitude, latitude and altitude of the two coordinate points 
+into XYZ coordinate points on the Cartesian coordinate system with the earth's spherical center as the origin.
+
+line 7-8 show the two points with latitude, longitude and altitude respectively, which are required to be input by user.
+line 20-22 build the ,athematical model of earth which convert input to be points in Cartesian coordinate.
+line 24-26 capture the corresponding x, y and z values after convertion.
+
+The second part is to calculate the pitch angle.
+
+line 35-36 show how to calculate the numerator and denominator of the cosine value of pitch angle respectively.
+line 38-42 discuss the output of pitch angle under condition that whether point1 has higher altitude than point2.
+
+The last part is to calculate the heading angle.
+
+line 53-56 show how to calculate the heading angle by values captured in line 50-51.
+line 58-70 discuss the output of azimuth by four different directions. But actually, the heading angle ranges from 0 to 360 degree, 
+so that we do not have to consider different quadrants when calculate the heading angle.
